@@ -8,8 +8,12 @@ import android.app.Application;
 
 public class MyApp extends Application{
 
+    public static final String DB_NAME="local-db";
+
     @Override
     public void onCreate() {
         super.onCreate();
     }
+
+
 }
