@@ -21,6 +21,8 @@ public class ProgressAct extends AppCompatActivity{
         setContentView(R.layout.progress_act);
         circleView= (CircleProgressView) findViewById(R.id.circle_view);
 
+        circleView.setValueAnimated(0,100,10000);
+//        circleView.setValue(80);
 
     }
 }

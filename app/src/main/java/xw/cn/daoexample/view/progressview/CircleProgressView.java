@@ -1871,36 +1871,36 @@ public class CircleProgressView extends View {
     @Override
     public boolean onTouchEvent(@NonNull MotionEvent event) {
 
-        if (mSeekModeEnabled == false) {
-            return super.onTouchEvent(event);
-        }
-
-        switch (event.getActionMasked()) {
-            case MotionEvent.ACTION_DOWN:
-            case MotionEvent.ACTION_UP: {
-                mTouchEventCount = 0;
-                PointF point = new PointF(event.getX(), event.getY());
-                float angle = getRotationAngleForPointFromStart(point);
-                setValueAnimated(mMaxValue / 360f * angle, 800);
-                return true;
-            }
-            case MotionEvent.ACTION_MOVE: {
-                mTouchEventCount++;
-                if (mTouchEventCount > 5) { //touch/move guard
-                    PointF point = new PointF(event.getX(), event.getY());
-                    float angle = getRotationAngleForPointFromStart(point);
-                    setValue(mMaxValue / 360f * angle);
-                    return true;
-                } else {
-                    return false;
-                }
-
-            }
-            case MotionEvent.ACTION_CANCEL:
-                mTouchEventCount = 0;
-                return false;
-        }
-
+//        if (mSeekModeEnabled == false) {
+//            return super.onTouchEvent(event);
+//        }
+//
+//        switch (event.getActionMasked()) {
+//            case MotionEvent.ACTION_DOWN:
+//            case MotionEvent.ACTION_UP: {
+//                mTouchEventCount = 0;
+//                PointF point = new PointF(event.getX(), event.getY());
+//                float angle = getRotationAngleForPointFromStart(point);
+//                setValueAnimated(mMaxValue / 360f * angle, 800);
+//                return true;
+//            }
+//            case MotionEvent.ACTION_MOVE: {
+//                mTouchEventCount++;
+//                if (mTouchEventCount > 5) { //touch/move guard
+//                    PointF point = new PointF(event.getX(), event.getY());
+//                    float angle = getRotationAngleForPointFromStart(point);
+//                    setValue(mMaxValue / 360f * angle);
+//                    return true;
+//                } else {
+//                    return false;
+//                }
+//
+//            }
+//            case MotionEvent.ACTION_CANCEL:
+//                mTouchEventCount = 0;
+//                return false;
+//        }
+//
 
         return super.onTouchEvent(event);
     }
