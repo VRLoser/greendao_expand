@@ -2,6 +2,7 @@
 this IS modify content
 This is mac os moidify
 get the commit
+this is a test word 
 
 Note:
 准备工作：
