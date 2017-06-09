@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="CircleProgressView">
-<<<<<<< HEAD
+    <declare-styleable name="ProgressView">
         <attr name="cpb_progress" format="integer"/>
         <attr name="cpb_progressbar_color" format="color"/>
         <attr name="cpb_progressbar_background_color" format="color"/>
@@ -10,8 +9,7 @@
 
     </declare-styleable>
 
-</resources>
-=======
+    <declare-styleable name="CircleProgressView">
         <!-- Text-->
         <attr name="cpv_text" format="string" />
         <attr name="cpv_unit" format="string" />
@@ -110,4 +108,3 @@
     </declare-styleable>
 
 </resources>
->>>>>>> e44071984e7acde75453d47f7a7ecd8a52832253
